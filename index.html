@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Camp Infra | Premium Sports Infrastructure Across India</title>
+<meta name="description" content="Sports Camp Infra designs and builds premium sports infrastructure — football turf, cricket turf, acrylic courts, wooden flooring, EPDM flooring, running tracks and gym flooring — engineered to international standards.">
+<meta name="keywords" content="sports infrastructure, football turf, cricket turf, acrylic court, EPDM flooring, wooden flooring, running track, sports flooring India, basketball court construction, badminton court construction">
+<meta name="author" content="Sports Camp Infra">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sports Camp Infra | Building India's Premium Sports Infrastructure">
+<meta property="og:description" content="From turf to timber, courts to tracks — we engineer sports facilities built for competition.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1487466365202-1afdb86c764e?q=80&w=1600&auto=format&fit=crop">
+<meta property="og:url" content="https://sportscampinfra.com">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Sports Camp Infra",
+  "description": "Premium sports infrastructure design and construction company.",
+  "url": "https://sportscampinfra.com",
+  "areaServed": "IN",
+  "sameAs": []
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-ball">
+      <svg viewBox="0 0 100 100" class="ball-svg">
+        <circle cx="50" cy="50" r="46" fill="#fff" stroke="#111111" stroke-width="2"/>
+        <path d="M50 20 L64 30 L59 47 L41 47 L36 30 Z" fill="#111111"/>
+        <path d="M50 20 L36 30 M50 20 L64 30 M41 47 L20 42 M59 47 L80 42 M41 47 L45 70 M59 47 L55 70 M20 42 L15 60 M80 42 L85 60 M45 70 L40 90 M55 70 L60 90" stroke="#111111" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+    <div class="loader-word">
+      <span>SPORTS</span><span class="loader-accent">CAMP</span><span>INFRA</span>
+    </div>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill" id="loaderFill"></div>
+    </div>
+    <div class="loader-percent" id="loaderPercent">0%</div>
+  </div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-mark">SC</span>
+      <span class="logo-text">Sports<em>Camp</em>Infra</span>
+    </a>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary nav-cta magnetic">
+      <span>Book Consultation</span>
+    </a>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2000&auto=format&fit=crop" alt="Premium sports stadium at dusk" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-rays"></div>
+  </div>
+
+  <canvas id="particleCanvas" class="hero-particles"></canvas>
+
+  <div class="hero-lines">
+    <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+      <line x1="0" y1="400" x2="1440" y2="400" class="pitch-line" />
+      <circle cx="720" cy="400" r="120" class="pitch-circle" />
+      <line x1="720" y1="0" x2="720" y2="800" class="pitch-line-v" />
+    </svg>
+  </div>
+
+  <div class="hero-content" id="heroContent">
+    <span class="eyebrow reveal-up">Est. 2005 &middot; Pan-India Sports Infrastructure</span>
+    <h1 class="hero-title">
+      <span class="mask-line"><span class="mask-inner">Building India&rsquo;s</span></span>
+      <span class="mask-line"><span class="mask-inner">Premium <em>Sports</em></span></span>
+      <span class="mask-line"><span class="mask-inner">Infrastructure</span></span>
+    </h1>
+    <p class="hero-sub reveal-up">
+      We design and build world-class sports facilities — football turf, cricket turf, acrylic courts, wooden flooring, EPDM flooring, running tracks and gym flooring — engineered for champions.
+    </p>
+    <div class="hero-actions reveal-up">
+      <a href="#services" class="btn btn-primary magnetic"><span>Explore Services</span></a>
+      <a href="#contact" class="btn btn-ghost magnetic"><span>Request Quote</span></a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust-bar">
+  <div class="container trust-grid">
+    <div class="trust-item">
+      <span class="trust-number" data-target="500">0</span><span class="trust-plus">+</span>
+      <p>Projects Completed</p>
+    </div>
+    <div class="trust-item">
+      <span class="trust-number" data-target="20">0</span><span class="trust-plus">+</span>
+      <p>Years Experience</p>
+    </div>
+    <div class="trust-item">
+      <span class="trust-number" data-target="100">0</span><span class="trust-plus">+</span>
+      <p>Happy Clients</p>
+    </div>
+    <div class="trust-item">
+      <span class="trust-number" data-target="25">0</span><span class="trust-plus">+</span>
+      <p>Sports Solutions</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal-scale">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1400&auto=format&fit=crop" alt="Aerial view of professional football turf construction" loading="lazy">
+      <div class="about-badge">
+        <strong>20+</strong>
+        <span>Years building playing surfaces</span>
+      </div>
+    </div>
+    <div class="about-content">
+      <span class="eyebrow reveal-up">Who We Are</span>
+      <h2 class="section-title reveal-up">Engineering surfaces where champions are made</h2>
+      <p class="reveal-up">
+        Sports Camp Infra is a turnkey sports infrastructure company delivering stadiums, courts, turf and flooring solutions across India. From FIFA-grade football turf to acrylic courts certified for national tournaments, every surface we lay is built on precision engineering and premium materials.
+      </p>
+      <div class="about-cols">
+        <div class="about-col reveal-up">
+          <h4>Our Mission</h4>
+          <p>To make world-class sporting surfaces accessible to every school, academy, club and city in India.</p>
+        </div>
+        <div class="about-col reveal-up">
+          <h4>Our Vision</h4>
+          <p>To become India&rsquo;s most trusted name in sports infrastructure, on par with the world&rsquo;s best builders.</p>
+        </div>
+      </div>
+      <a href="#services" class="btn btn-outline magnetic reveal-up"><span>Learn More</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- field-line divider -->
+<div class="divider-line" aria-hidden="true"><svg viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0,20 L1440,20" class="draw-line"/></svg></div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <span class="eyebrow reveal-up center">What We Build</span>
+    <h2 class="section-title center reveal-up">Complete Sports Infrastructure Solutions</h2>
+    <p class="section-sub center reveal-up">Twenty-five specialised solutions. One dependable contractor.</p>
+
+    <div class="services-grid" id="servicesGrid">
+      <!-- injected by JS for consistency, see script.js SERVICES array -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US (BENTO) ============ -->
+<section class="why" id="why">
+  <div class="container">
+    <span class="eyebrow reveal-up center">Why Sports Camp Infra</span>
+    <h2 class="section-title center reveal-up">Built different. Built to last.</h2>
+
+    <div class="bento-grid">
+      <div class="bento-item bento-large reveal-up">
+        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop" alt="Premium materials on court surface" loading="lazy">
+        <div class="bento-text">
+          <h4>Premium Materials</h4>
+          <p>Sourced from certified global manufacturers for durability and performance.</p>
+        </div>
+      </div>
+      <div class="bento-item reveal-up">
+        <h4>International Standards</h4>
+        <p>FIFA, IAAF and BWF compliant construction for competitive play.</p>
+      </div>
+      <div class="bento-item reveal-up">
+        <h4>Experienced Team</h4>
+        <p>200+ engineers and installers with two decades on the field.</p>
+      </div>
+      <div class="bento-item reveal-up">
+        <h4>Fast Installation</h4>
+        <p>Optimised project timelines without compromising on finish quality.</p>
+      </div>
+      <div class="bento-item reveal-up">
+        <h4>Customised Design</h4>
+        <p>Every facility engineered around your site, sport and budget.</p>
+      </div>
+      <div class="bento-item bento-wide reveal-up">
+        <div class="bento-text">
+          <h4>Warranty &amp; Maintenance Support</h4>
+          <p>Long-term warranties backed by a dedicated maintenance team, so your investment keeps performing season after season.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1560089000-7433a4ebbd64?q=80&w=1200&auto=format&fit=crop" alt="Maintenance team servicing gym flooring" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="container">
+    <span class="eyebrow reveal-up center">How We Work</span>
+    <h2 class="section-title center reveal-up">From First Call to Final Whistle</h2>
+  </div>
+  <div class="process-track-wrap">
+    <div class="process-track" id="processTrack">
+      <div class="process-step">
+        <span class="process-index">01</span>
+        <h4>Consultation</h4>
+        <p>Understanding your site, sport and vision.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-index">02</span>
+        <h4>Planning</h4>
+        <p>Feasibility, budgeting and technical survey.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-index">03</span>
+        <h4>Design</h4>
+        <p>Engineering drawings and material selection.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-index">04</span>
+        <h4>Manufacturing</h4>
+        <p>Precision-fabricated turf, flooring and fittings.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-index">05</span>
+        <h4>Installation</h4>
+        <p>On-site build by certified installation crews.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-index">06</span>
+        <h4>Quality Check</h4>
+        <p>Multi-point inspection against international norms.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-index">07</span>
+        <h4>Project Handover</h4>
+        <p>Documentation, training and warranty activation.</p>
+      </div>
+    </div>
+    <div class="process-progress"><div class="process-progress-fill" id="processFill"></div></div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="container">
+    <span class="eyebrow reveal-up center">Featured Work</span>
+    <h2 class="section-title center reveal-up">Projects That Speak for Themselves</h2>
+
+    <div class="projects-grid">
+      <a class="project-card reveal-up" href="#">
+        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop" alt="Basketball court project" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-cat">Basketball Court</span>
+          <h4>Ace Sports Academy</h4>
+          <span class="project-loc">Pune, Maharashtra</span>
+        </div>
+      </a>
+      <a class="project-card reveal-up" href="#">
+        <img src="https://images.unsplash.com/photo-1518614368389-953f4f8a2f42?q=80&w=1200&auto=format&fit=crop" alt="Football turf project" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-cat">Football Turf</span>
+          <h4>Greenfield Stadium</h4>
+          <span class="project-loc">Ranchi, Jharkhand</span>
+        </div>
+      </a>
+      <a class="project-card reveal-up" href="#">
+        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1200&auto=format&fit=crop" alt="Running track project" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-cat">Running Track</span>
+          <h4>District Athletics Stadium</h4>
+          <span class="project-loc">Bhopal, MP</span>
+        </div>
+      </a>
+      <a class="project-card reveal-up" href="#">
+        <img src="https://images.unsplash.com/photo-1544919982-b61976f0ba43?q=80&w=1200&auto=format&fit=crop" alt="Badminton court project" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-cat">Badminton Court</span>
+          <h4>Champion&rsquo;s Indoor Arena</h4>
+          <span class="project-loc">Hyderabad, Telangana</span>
+        </div>
+      </a>
+      <a class="project-card reveal-up" href="#">
+        <img src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?q=80&w=1200&auto=format&fit=crop" alt="Gym flooring project" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-cat">Gym Flooring</span>
+          <h4>Fit Zone Performance Centre</h4>
+          <span class="project-loc">Bengaluru, Karnataka</span>
+        </div>
+      </a>
+      <a class="project-card reveal-up" href="#">
+        <img src="https://images.unsplash.com/photo-1493962853295-0fd70327578a?q=80&w=1200&auto=format&fit=crop" alt="Cricket turf project" loading="lazy">
+        <div class="project-overlay">
+          <span class="project-cat">Cricket Turf</span>
+          <h4>Victory Cricket Ground</h4>
+          <span class="project-loc">Nagpur, Maharashtra</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPORTS WE COVER ============ -->
+<section class="sports-cover" id="gallery">
+  <div class="container">
+    <span class="eyebrow reveal-up center">Sports We Cover</span>
+    <h2 class="section-title center reveal-up">One Contractor. Every Sport.</h2>
+    <div class="sports-grid" id="sportsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CLIENT LOGOS MARQUEE ============ -->
+<section class="clients">
+  <div class="marquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Ace Sports Academy</span>
+      <span>Greenfield Stadium</span>
+      <span>District Sports Authority</span>
+      <span>Champion&rsquo;s Arena</span>
+      <span>Fit Zone Group</span>
+      <span>Victory Cricket Club</span>
+      <span>National Games Committee</span>
+      <span>Metro Turf Developers</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="container">
+    <span class="eyebrow reveal-up center">Client Voices</span>
+    <h2 class="section-title center reveal-up">Trusted by Academies, Clubs &amp; Cities</h2>
+
+    <div class="testimonial-track" id="testimonialTrack">
+      <div class="testimonial-card">
+        <p>&ldquo;The turf quality and finish exceeded international standards. Our players noticed the difference from the first session.&rdquo;</p>
+        <div class="testimonial-author">
+          <strong>Rohan Mehta</strong>
+          <span>Director, Ace Sports Academy</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>&ldquo;From consultation to handover, the entire process was transparent and remarkably fast without cutting corners.&rdquo;</p>
+        <div class="testimonial-author">
+          <strong>Anita Sharma</strong>
+          <span>Facilities Head, District Sports Authority</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p>&ldquo;Our acrylic court has hosted two state-level tournaments already. Best investment we&rsquo;ve made for the club.&rdquo;</p>
+        <div class="testimonial-author">
+          <strong>Vikram Rao</strong>
+          <span>President, Champion&rsquo;s Indoor Arena</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container faq-grid">
+    <div class="faq-head">
+      <span class="eyebrow reveal-up">FAQ</span>
+      <h2 class="section-title reveal-up">Questions, Answered</h2>
+      <p class="reveal-up">Can&rsquo;t find what you&rsquo;re looking for? <a href="#contact">Talk to our team</a>.</p>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-question">What surfaces do you install?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><p>We install football turf, cricket turf, acrylic and wooden courts, EPDM flooring, running tracks, gym flooring and complete stadium infrastructure.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do your surfaces meet international standards?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><p>Yes. Our installations comply with FIFA, IAAF and BWF standards depending on the sport and certification required.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How long does a typical project take?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><p>Timelines vary by scope — a single court can be completed in 2–3 weeks, while full stadium infrastructure may take several months.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you provide maintenance after installation?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><p>Yes, every project includes a warranty period and optional ongoing maintenance contracts to protect your investment.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Which cities do you operate in?<span class="faq-icon"></span></button>
+        <div class="faq-answer"><p>We operate pan-India, with completed projects across Maharashtra, Karnataka, Telangana, Madhya Pradesh, Jharkhand and beyond.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="cta-bg">
+    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2000&auto=format&fit=crop" alt="Stadium floodlights at night" loading="lazy">
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="container cta-content">
+    <h2 class="reveal-up">Let&rsquo;s Build Your Dream Sports Facility</h2>
+    <a href="#contact" class="btn btn-primary btn-lg magnetic reveal-up"><span>Request a Quote</span></a>
+  </div>
+</section>
+
+<!-- ============ CONTACT PREVIEW ============ -->
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-card reveal-up">
+      <span class="eyebrow">Get In Touch</span>
+      <h2 class="section-title">Start Your Project Today</h2>
+      <p>Tell us about your site and sport — our team responds within one business day.</p>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Phone</span>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+        </li>
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:hello@sportscampinfra.com">hello@sportscampinfra.com</a>
+        </li>
+        <li>
+          <span class="contact-label">Office</span>
+          <span>4th Floor, Turf Tower, Sector 21, Gurugram, Haryana</span>
+        </li>
+      </ul>
+      <a href="#" class="btn btn-primary magnetic"><span>Book Consultation</span></a>
+    </div>
+    <div class="contact-map reveal-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112087.1!2d77.026!3d28.459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c%3A0x0!2sGurugram!5e0!3m2!1sen!2sin!4v1234567890"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sports Camp Infra Office Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="logo-text light"><span class="logo-mark">SC</span>Sports<em>Camp</em>Infra</span>
+      <p>Building India&rsquo;s premium sports infrastructure since 2005.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="#services">Football Turf</a>
+      <a href="#services">Acrylic Courts</a>
+      <a href="#services">Wooden Flooring</a>
+      <a href="#services">Running Track</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <a href="tel:+919876543210">+91 98765 43210</a>
+      <a href="mailto:hello@sportscampinfra.com">hello@sportscampinfra.com</a>
+      <a href="#contact">Gurugram, Haryana</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>&copy; 2026 Sports Camp Infra. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="LinkedIn">LN</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
